@@ -44,7 +44,7 @@ public class CartController {
    @RequestMapping({ "/buyProduct" })
    public String listProductHandler(HttpServletRequest request, Model model, 
 		   @RequestParam(value = "code") int code,Principal princial) {
- 
+	   // change buy product
        Product product = null;
        if (code>0) {
            product = productService.getProduct(code);
